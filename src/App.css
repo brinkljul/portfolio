@@ -2,37 +2,198 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header {
+  background-image: url("img/trees.jpg");
+  background-position-y: 60%;
+  background-size: cover;
+  height: 50vh;
+  min-height: 320px;
+  display: flex;
+  color: white;
+  align-items: center;
+  filter: drop-shadow(0 0rem 0.15rem rgb(0, 0, 0, 1));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-header-text {
+  /* make the text div fill the parent div without affecting the image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  min-height: 320px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  filter: drop-shadow(0.5rem 0.5rem 0.25rem rgb(0, 0, 0, 0.25));
+}
+
+.App-header img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  position: absolute;
+  margin-left: 10%;
+  filter: drop-shadow(0.5rem 0.5rem 0.25rem rgb(0, 0, 0, 0.25));
+}
+
+@media (max-width: 840px) {
+  /* put the image in the column with the text elements */
+  .App-header-text {
+    position: relative;
+    height: auto;
+    min-height: 0;
+    line-height: 0;
+  }
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .App-header img {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  filter: drop-shadow(0.1rem 0.1rem 0.3rem rgb(0, 0, 0, 0.3));
+}
+
+.App-header h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.App-body {
+  height: 100%;
+}
+
+.Socials {
+  padding: 1rem;
+}
+
+.Socials a {
+  margin: 0 0.5rem;
+  filter: drop-shadow(1rem 1rem 0.9rem rgb(0, 0, 0, 0.1));
+}
+
+.Head {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.Body-text {
+  text-align: left;
+}
+
+.Body-text .p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.Body-text .p#p1 {
+  background-image: url("img/OSU.jpg");
+  object-fit: cover;
+  /* https://www.statesmanjournal.com/story/news/2021/10/09/oregon-state-university-drafts-presidential-search-timeline/6071242001/ */
+  background-position-y: 20%;
+}
+
+.Body-text .p#p2 {
+  margin-top: 10em;
+  background-image: url("img/mandel.jpg");
+  background-size: cover;
+  background-position-x: 30%;
+  background-position-y: 30%;
+}
+
+.Body-text .p#p3 {
+  margin-top: 10em;
+  background-image: url("img/pride.jpg");
+  background-size: cover;
+  background-position-y: 30%;
+}
+
+.Body-text .pWrapper {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2rem 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.Body-text img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: -1rem 0;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0.5rem 0.5rem 0.7rem rgb(0, 0, 0, 0.15));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#doubleImgSize {
+  width: 10rem;
+  height: 10rem;
+}
+
+.Body-text .ptext {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  filter: drop-shadow(0.5rem 0.5rem 0.7rem rgb(0, 0, 0, 0.15));
+}
+
+/* make the App-footer class stick to the bottom of the page */
+.App-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  height: 2.5rem;
+}
+
+.Body-text a {
+  /* anchor tag adds weird margins idk */
+  margin: -0.45rem;
+}
+
+.Body-text img {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  filter: invert(20%);
+  z-index: 3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0.75rem;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
 }
