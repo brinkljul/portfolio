@@ -45,7 +45,7 @@ function App() {
                 </a>
                 <div className="ptext">
                   <p>
-                    I'm Jules Brinkley, an Oregon State University 2024 graduate majoring in Computer Science: Systems. I'm looking for a remote summer 2023 internship in Data Science or Cybersecurity.
+                    I'm Jules Brinkley, an Oregon State University 2024 graduate with a major in Computer Science: Systems. I'm looking for a position in general Software Development, Data Science, or Cybersecurity.
                   </p>
                 </div>
               </div>
